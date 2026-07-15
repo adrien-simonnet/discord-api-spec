@@ -13694,6 +13694,66 @@
         ]
       }
     },
+    "/oauth2/token": {
+      "post": {
+        "operationId": "get_oauth2_token",
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/AuthorizationCodeRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/RefreshTokenRequest"
+                  }
+                ]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "200 response for get_oauth2_token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccessTokenResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-RateLimit-Limit": {
+                "$ref": "#/components/headers/X-RateLimit-Limit"
+              },
+              "X-RateLimit-Remaining": {
+                "$ref": "#/components/headers/X-RateLimit-Remaining"
+              },
+              "X-RateLimit-Reset": {
+                "$ref": "#/components/headers/X-RateLimit-Reset"
+              },
+              "X-RateLimit-Reset-After": {
+                "$ref": "#/components/headers/X-RateLimit-Reset-After"
+              },
+              "X-RateLimit-Bucket": {
+                "$ref": "#/components/headers/X-RateLimit-Bucket"
+              }
+            }
+          },
+          "429": {
+            "$ref": "#/components/responses/ClientRatelimitedResponse"
+          },
+          "4XX": {
+            "$ref": "#/components/responses/ClientErrorResponse"
+          }
+        },
+        "security": [
+          {}
+        ]
+      }
+    },
     "/oauth2/userinfo": {
       "get": {
         "operationId": "get_openid_connect_userinfo",
@@ -16847,6 +16907,33 @@
   },
   "components": {
     "schemas": {
+      "AccessTokenResponse": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string"
+          },
+          "expires_in": {
+            "type": "integer"
+          },
+          "refresh_token": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "token_type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "access_token",
+          "expires_in",
+          "refresh_token",
+          "scope",
+          "token_type"
+        ]
+      },
       "AccountResponse": {
         "type": "object",
         "properties": {
@@ -21155,6 +21242,37 @@
         },
         "required": [
           "key"
+        ]
+      },
+      "AuthorizationCodeRequest": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "$ref": "#/components/schemas/SnowflakeType"
+          },
+          "client_secret": {
+            "type": "string"
+          },
+          "grant_type": {
+            "type": "string",
+            "enum": [
+              "refresh_token"
+            ],
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/GrantTypes"
+              }
+            ]
+          },
+          "refresh_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "client_id",
+          "client_secret",
+          "grant_type",
+          "refresh_token"
         ]
       },
       "AuthorType": {
@@ -26427,6 +26545,19 @@
         },
         "required": [
           "sender"
+        ]
+      },
+      "GrantTypes": {
+        "type": "string",
+        "oneOf": [
+          {
+            "title": "AUTHORIZATION_CODE",
+            "const": "authorization_code"
+          },
+          {
+            "title": "REFRESH_TOKEN",
+            "const": "refresh_token"
+          }
         ]
       },
       "GroupDMInviteResponse": {
@@ -36329,6 +36460,37 @@
           }
         ],
         "format": "int32"
+      },
+      "RefreshTokenRequest": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "$ref": "#/components/schemas/SnowflakeType"
+          },
+          "client_secret": {
+            "type": "string"
+          },
+          "grant_type": {
+            "type": "string",
+            "enum": [
+              "refresh_token"
+            ],
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/GrantTypes"
+              }
+            ]
+          },
+          "refresh_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "client_id",
+          "client_secret",
+          "grant_type",
+          "refresh_token"
+        ]
       },
       "ResolvedObjectsResponse": {
         "type": "object",
