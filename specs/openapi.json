@@ -11923,6 +11923,12 @@
                     "$ref": "#/components/schemas/CreateMessageInteractionCallbackRequest"
                   },
                   {
+                    "$ref": "#/components/schemas/DeferredCreateMessageInteractionCallbackRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/DeferredUpdateMessageInteractionCallbackRequest"
+                  },
+                  {
                     "$ref": "#/components/schemas/LaunchActivityInteractionCallbackRequest"
                   },
                   {
@@ -11951,6 +11957,12 @@
                     "$ref": "#/components/schemas/CreateMessageInteractionCallbackRequest"
                   },
                   {
+                    "$ref": "#/components/schemas/DeferredCreateMessageInteractionCallbackRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/DeferredUpdateMessageInteractionCallbackRequest"
+                  },
+                  {
                     "$ref": "#/components/schemas/LaunchActivityInteractionCallbackRequest"
                   },
                   {
@@ -11977,6 +11989,12 @@
                   },
                   {
                     "$ref": "#/components/schemas/CreateMessageInteractionCallbackRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/DeferredCreateMessageInteractionCallbackRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/DeferredUpdateMessageInteractionCallbackRequest"
                   },
                   {
                     "$ref": "#/components/schemas/LaunchActivityInteractionCallbackRequest"
@@ -23811,8 +23829,7 @@
           "type": {
             "type": "integer",
             "enum": [
-              4,
-              5
+              4
             ],
             "allOf": [
               {
@@ -23822,18 +23839,12 @@
             "format": "int32"
           },
           "data": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/IncomingWebhookInteractionRequest"
-              }
-            ]
+            "$ref": "#/components/schemas/IncomingWebhookInteractionRequest"
           }
         },
         "required": [
-          "type"
+          "type",
+          "data"
         ]
       },
       "CreateMessageInteractionCallbackResponse": {
@@ -24603,6 +24614,56 @@
         "required": [
           "emoji_id",
           "emoji_name"
+        ]
+      },
+      "DeferredCreateMessageInteractionCallbackRequest": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "enum": [
+              5
+            ],
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InteractionCallbackTypes"
+              }
+            ],
+            "format": "int32"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/IncomingWebhookInteractionRequest"
+              }
+            ]
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "DeferredUpdateMessageInteractionCallbackRequest": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "enum": [
+              6
+            ],
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/InteractionCallbackTypes"
+              }
+            ],
+            "format": "int32"
+          }
+        },
+        "required": [
+          "type"
         ]
       },
       "DiscordIntegrationResponse": {
@@ -40421,7 +40482,6 @@
           "type": {
             "type": "integer",
             "enum": [
-              6,
               7
             ],
             "allOf": [
@@ -40432,18 +40492,12 @@
             "format": "int32"
           },
           "data": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/IncomingWebhookUpdateForInteractionCallbackRequestPartial"
-              }
-            ]
+            "$ref": "#/components/schemas/IncomingWebhookUpdateForInteractionCallbackRequestPartial"
           }
         },
         "required": [
-          "type"
+          "type",
+          "data"
         ]
       },
       "UpdateMessageInteractionCallbackResponse": {
