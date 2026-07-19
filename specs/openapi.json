@@ -17626,6 +17626,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -17642,6 +17645,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -17684,6 +17690,9 @@
               "object",
               "null"
             ],
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "additionalProperties": {
               "type": "string"
             }
@@ -17699,6 +17708,9 @@
               "object",
               "null"
             ],
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "additionalProperties": {
               "type": "string"
             }
@@ -17778,6 +17790,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -17794,6 +17809,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -17838,6 +17856,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -17853,6 +17874,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -17895,6 +17919,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -17911,6 +17938,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -17965,6 +17995,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -17980,6 +18013,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -18017,6 +18053,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -18035,6 +18074,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -18190,6 +18232,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -18206,6 +18251,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -18286,6 +18334,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -18301,6 +18352,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -18401,6 +18455,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -18417,6 +18474,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -18461,6 +18521,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -18476,6 +18539,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -18518,6 +18584,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -18534,6 +18603,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -18608,6 +18680,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -18623,6 +18698,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -18670,6 +18748,9 @@
               "minLength": 1,
               "maxLength": 100
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "value": {
@@ -18697,6 +18778,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "value": {
@@ -18726,6 +18810,9 @@
               "minLength": 1,
               "maxLength": 100
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "value": {
@@ -18754,6 +18841,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "value": {
@@ -18784,6 +18874,9 @@
               "minLength": 1,
               "maxLength": 100
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "value": {
@@ -18812,6 +18905,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "value": {
@@ -18902,6 +18998,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -18920,6 +19019,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -19090,6 +19192,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -19105,6 +19210,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "guild_id": {
@@ -19218,6 +19326,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -19234,6 +19345,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -19278,6 +19392,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -19293,6 +19410,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -19335,6 +19455,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -19351,6 +19474,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -19427,6 +19553,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -19442,6 +19571,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -19501,6 +19633,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -19517,6 +19652,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -19571,6 +19709,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -19586,6 +19727,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -19634,6 +19778,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -19650,6 +19797,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -19732,6 +19882,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -19747,6 +19900,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -19837,6 +19993,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -19855,6 +20014,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -20004,6 +20166,9 @@
               "minLength": 1,
               "maxLength": 32
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 34
           },
           "description": {
@@ -20020,6 +20185,9 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 34
           },
@@ -20064,6 +20232,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -20079,6 +20250,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "required": {
@@ -20149,6 +20323,9 @@
                 "additionalProperties": {
                   "type": "string",
                   "maxLength": 400
+                },
+                "propertyNames": {
+                  "$ref": "#/components/schemas/AvailableLocalesEnum"
                 }
               }
             },
@@ -20686,6 +20863,9 @@
               "minLength": 1,
               "maxLength": 100
             },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
+            },
             "maxProperties": 1521
           },
           "description": {
@@ -20705,6 +20885,9 @@
               ],
               "minLength": 1,
               "maxLength": 200
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             },
             "maxProperties": 1521
           }
@@ -20735,6 +20918,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           },
           "description": {
@@ -20747,6 +20933,9 @@
             ],
             "additionalProperties": {
               "type": "string"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/AvailableLocalesEnum"
             }
           }
         },
