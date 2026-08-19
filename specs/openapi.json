@@ -16000,41 +16000,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "anyOf": [
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
-                  },
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookUpdateRequestPartial"
-                  }
-                ],
-                "x-discord-union": "oneOf"
+                "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "anyOf": [
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
-                  },
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookUpdateRequestPartial"
-                  }
-                ],
-                "x-discord-union": "oneOf"
+                "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
               }
             },
             "multipart/form-data": {
               "schema": {
-                "anyOf": [
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
-                  },
-                  {
-                    "$ref": "#/components/schemas/IncomingWebhookUpdateRequestPartial"
-                  }
-                ],
-                "x-discord-union": "oneOf"
+                "$ref": "#/components/schemas/IncomingWebhookRequestPartial"
               }
             }
           },
