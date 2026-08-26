@@ -21897,6 +21897,75 @@
           }
         }
       },
+      "BaseInteraction": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "ID of the interaction.",
+            "$ref": "#/components/schemas/SnowflakeType"
+          },
+          "application_id": {
+            "description": "ID of the application this interaction is for.",
+            "$ref": "#/components/schemas/SnowflakeType"
+          },
+          "type": {
+            "description": "Type of interaction.",
+            "$ref": "#/components/schemas/InteractionTypes"
+          },
+          "token": {
+            "description": "Continuation token for responding to the interaction.",
+            "type": "string"
+          },
+          "app_permissions": {
+            "description": "Bitwise set of permissions the app has in the source location of the interaction.",
+            "type": "string"
+          },
+          "channel_id": {
+            "description": "Channel that the interaction was sent from.",
+            "$ref": "#/components/schemas/SnowflakeType"
+          },
+          "entitlements": {
+            "description": "For monetized apps, any entitlements for the invoking user, representing access to premium SKUs.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntitlementResponse"
+            }
+          },
+          "locale": {
+            "description": "Selected language of the invoking user.",
+            "$ref": "#/components/schemas/AvailableLocalesEnum"
+          },
+          "message": {
+            "description": "For components or modals triggered by components, the message they were attached to.",
+            "$ref": "#/components/schemas/MessageResponse"
+          },
+          "authorizing_integration_owners": {
+            "description": "Mapping of installation contexts that the interaction was authorized for to related user or guild IDs.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SnowflakeType"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/InteractionContextType"
+            }
+          },
+          "attachment_size_limit": {
+            "description": "MessageAttachmentResponse size limit in bytes.",
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "application_id",
+          "type",
+          "token",
+          "app_permissions",
+          "channel_id",
+          "locale",
+          "context",
+          "attachment_size_limit"
+        ]
+      },
       "BasicApplicationResponseWithBot": {
         "type": "object",
         "properties": {
@@ -22407,6 +22476,49 @@
         },
         "required": [
           "access_token"
+        ]
+      },
+      "BotDirectMessageInteraction": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInteraction"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "context": {
+                "description": "Context where the interaction was triggered from.",
+                "type": "integer",
+                "enum": [
+                  1
+                ],
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InteractionContextType"
+                  }
+                ]
+              },
+              "channel": {
+                "description": "Channel that the interaction was sent from.",
+                "$ref": "#/components/schemas/PrivateChannelResponse"
+              },
+              "user": {
+                "description": "UserResponse object for the invoking user.",
+                "$ref": "#/components/schemas/UserResponse"
+              },
+              "dm": {
+                "description": "Indicates if the interaction was invoked in a direct message.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "context",
+              "user",
+              "dm",
+              "channel"
+            ]
+          }
         ]
       },
       "BulkBanUsersRequest": {
@@ -27476,6 +27588,94 @@
           "id",
           "name",
           "type"
+        ]
+      },
+      "GuildInteraction": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInteraction"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "context": {
+                "description": "Context where the interaction was triggered from.",
+                "type": "integer",
+                "enum": [
+                  0
+                ],
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InteractionContextType"
+                  }
+                ]
+              },
+              "member": {
+                "description": "Guild member data for the invoking user, including permissions.",
+                "$ref": "#/components/schemas/GuildMemberResponse"
+              },
+              "channel": {
+                "description": "Channel that the interaction was sent from.",
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/GuildChannelResponse"
+                  },
+                  {
+                    "$ref": "#/components/schemas/ThreadResponse"
+                  }
+                ]
+              },
+              "guild_id": {
+                "description": "Guild that the interaction was sent from.",
+                "$ref": "#/components/schemas/SnowflakeType"
+              },
+              "guild_locale": {
+                "description": "Guild's preferred locale.",
+                "$ref": "#/components/schemas/AvailableLocalesEnum"
+              },
+              "guild": {
+                "description": "Guild object that the interaction was sent from.",
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "description": "Guild id.",
+                    "$ref": "#/components/schemas/SnowflakeType"
+                  },
+                  "features": {
+                    "description": "Enabled guild features",
+                    "type": "array",
+                    "items": {
+                      "description": "Guild id.",
+                      "$ref": "#/components/schemas/GuildFeatures"
+                    },
+                    "uniqueItems": true
+                  },
+                  "locale": {
+                    "description": "The preferred locale of a Community guild; used in server discovery and notices from Discord, and sent in interactions; defaults to \"en-US\"",
+                    "$ref": "#/components/schemas/AvailableLocalesEnum"
+                  }
+                },
+                "required": [
+                  "id",
+                  "features",
+                  "locale"
+                ]
+              },
+              "dm": {
+                "description": "Indicates if the interaction was invoked in a direct message.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "context",
+              "member",
+              "guild_id",
+              "guild_locale",
+              "guild",
+              "channel"
+            ]
+          }
         ]
       },
       "GuildInviteResponse": {
@@ -36125,6 +36325,48 @@
           "user",
           "mute",
           "deaf"
+        ]
+      },
+      "PrivateMessageInteraction": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInteraction"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "context": {
+                "description": "Context where the interaction was triggered from.",
+                "type": "integer",
+                "enum": [
+                  2
+                ],
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InteractionContextType"
+                  }
+                ]
+              },
+              "channel": {
+                "description": "Channel that the interaction was sent from.",
+                "$ref": "#/components/schemas/PrivateGroupChannelResponse"
+              },
+              "user": {
+                "description": "UserResponse object for the invoking user.",
+                "$ref": "#/components/schemas/UserResponse"
+              },
+              "dm": {
+                "description": "Indicates if the interaction was invoked in a direct message.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "context",
+              "user",
+              "channel"
+            ]
+          }
         ]
       },
       "ProvisionalTokenResponse": {
