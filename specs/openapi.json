@@ -17592,19 +17592,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -17612,19 +17607,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -17674,16 +17664,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "additionalProperties": {
-              "type": "string"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -17692,16 +17680,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "additionalProperties": {
-              "type": "string"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -17777,19 +17763,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -17797,19 +17778,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -17846,16 +17822,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -17864,16 +17838,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -17906,19 +17878,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -17926,19 +17893,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -17985,16 +17947,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -18003,16 +17963,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -18040,19 +17998,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": [
@@ -18062,19 +18015,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "options": {
             "type": [
@@ -18219,19 +18167,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -18239,19 +18182,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -18324,16 +18262,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -18342,16 +18278,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -18442,19 +18376,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -18462,19 +18391,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -18511,16 +18435,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -18529,16 +18451,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -18571,19 +18491,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -18591,19 +18506,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -18670,16 +18580,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -18688,16 +18596,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -18735,19 +18641,14 @@
             "maxLength": 100
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "$ref": "#/components/schemas/Int53Type"
@@ -18768,16 +18669,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "$ref": "#/components/schemas/Int53Type"
@@ -18797,19 +18696,14 @@
             "maxLength": 100
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "type": "number",
@@ -18831,16 +18725,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "type": "number",
@@ -18861,19 +18753,14 @@
             "maxLength": 100
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "type": "string",
@@ -18895,16 +18782,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "value": {
             "type": "string"
@@ -18985,19 +18870,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": [
@@ -19007,19 +18887,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "options": {
             "type": [
@@ -19182,16 +19057,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -19200,16 +19073,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "guild_id": {
             "$ref": "#/components/schemas/SnowflakeType"
@@ -19313,19 +19184,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -19333,19 +19199,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -19382,16 +19243,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -19400,16 +19259,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -19442,19 +19299,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -19462,19 +19314,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -19543,16 +19390,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -19561,16 +19406,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -19620,19 +19463,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -19640,19 +19478,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -19699,16 +19532,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -19717,16 +19548,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -19765,19 +19594,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -19785,19 +19609,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -19872,16 +19691,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -19890,16 +19707,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -19980,19 +19795,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": [
@@ -20002,19 +19812,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "options": {
             "type": [
@@ -20153,19 +19958,14 @@
             "maxLength": 32
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 32
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -20173,19 +19973,14 @@
             "maxLength": 100
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 34
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": [
@@ -20222,16 +20017,14 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
@@ -20240,16 +20033,14 @@
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           },
           "required": {
             "type": "boolean"
@@ -20847,22 +20638,14 @@
             "maxLength": 100
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "minLength": 1,
-              "maxLength": 100
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 1521
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string",
@@ -20870,22 +20653,14 @@
             "maxLength": 200
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "minLength": 1,
-              "maxLength": 200
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            },
-            "maxProperties": 1521
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           }
         },
         "required": [
@@ -20908,31 +20683,27 @@
             "type": "string"
           },
           "name_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/NameLocalizations"
+              }
+            ]
           },
           "description": {
             "type": "string"
           },
           "description_localizations": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "additionalProperties": {
-              "type": "string"
-            },
-            "propertyNames": {
-              "$ref": "#/components/schemas/AvailableLocalesEnum"
-            }
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/DescriptionLocalizations"
+              }
+            ]
           }
         },
         "required": [
@@ -25099,6 +24870,17 @@
         "required": [
           "type"
         ]
+      },
+      "DescriptionLocalizations": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "propertyNames": {
+          "$ref": "#/components/schemas/AvailableLocalesEnum"
+        }
       },
       "DiscordIntegrationResponse": {
         "type": "object",
@@ -34715,6 +34497,17 @@
           "permissions",
           "features"
         ]
+      },
+      "NameLocalizations": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "propertyNames": {
+          "$ref": "#/components/schemas/AvailableLocalesEnum"
+        }
       },
       "NameplatePalette": {
         "type": "string",
